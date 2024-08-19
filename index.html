@@ -3,16 +3,413 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- NORMALIZE CSS -->
     <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title></title>
+    <title>Exclusive</title>
   </head>
   <body>
+    <!-- HEADER TOP -->
+    <div class="header-topbar">
+      <div class="container">
+        <div class="header-topbar__content">
+          <div class="header-topbar__info">
+            <p>
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+            </p>
+            <a class="header-topbar__link" href="#">ShopNow</a>
+          </div>
+          <div class="header-topbar__wrapper">
+            <div class="header-topbar__language__select">
+              <a class="header-topbar__language" href="#">English</a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- HEADER -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__container container">
+        <a class="logo-link" href="#"> Exclusive </a>
+        <!-- NAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Contact</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">About</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__wrapper">
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              required
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="header__icons">
+            <img src="./images/like.svg" alt="like" width="32" height="32" />
+            <img src="./images/shop.svg" alt="shop" width="24" height="24" />
+            <img src="./images/user.svg" alt="user" width="32" height="32" />
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- MAIN -->
-    <main class="main"></main>
+    <main class="main">
+      <!-- Wishlist -->
+      <section class="wishlist">
+        <div class="wishlist__container container">
+          <div class="wishlist__info site-wrapper">
+            <h2 class="wishlist__heading">Wishlist (4)</h2>
+            <a class="wishlist__btn btn" href="#">Move All To Bag</a>
+          </div>
+          <div class="wishlist__list">
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="wishlist__image"
+                  src="./images/bag.png"
+                  alt="Gucci duffle bag"
+                  width="178"
+                  height="129"
+                />
+                <div class="wishlist__icons">
+                  <div class="discount">
+                    <h4>-35%</h4>
+                  </div>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">Gucci duffle bag</h3>
+              <h3 class="wishlist__price">
+                $960 &nbsp;<span class="span">$1160</span>
+              </h3>
+            </div>
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="wishlist__image"
+                  src="./images/coler.png"
+                  alt="Cooler"
+                  width="191"
+                  height="95"
+                />
+                <div class="wishlist__icons">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">RGB liquid CPU Cooler</h3>
+              <h3 class="wishlist__price">$1960</h3>
+            </div>
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="wishlist__image"
+                  src="./images/gampaid.png"
+                  alt="Gamepad"
+                  width="178"
+                  height="150"
+                />
+                <div class="wishlist__icons">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">GP11 Shooter USB Gamepad</h3>
+              <h3 class="wishlist__price">$550</h3>
+            </div>
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="wishlist__image"
+                  src="./images/jacket.png"
+                  alt="Jacket"
+                  width="182"
+                  height="176"
+                />
+                <div class="wishlist__icons">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">Quilted Satin Jacket</h3>
+              <h3 class="wishlist__price">$750</h3>
+            </div>
+          </div>
+          <!-- JUST For You -->
+          <div class="wishlist__info site-wrapper">
+            <h2 class="wishlist__heading site-heading">Just For You</h2>
+            <a class="wishlist__btn btn" href="#">See All</a>
+          </div>
+          <div class="wishlist__list__second">
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="wishlist__image"
+                  src="./images/laptop.png"
+                  alt="ASUS FHD Gaming Laptop"
+                  width="158"
+                  height="166"
+                />
+                <div class="wishlist__icons">
+                  <div class="discount">
+                    <h4>-35%</h4>
+                  </div>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">ASUS FHD Gaming Laptop</h3>
+              <h3 class="wishlist__price">
+                $960 &nbsp;<span class="span">$1160</span>
+              </h3>
+              <div class="wishlist__stars">
+                <img
+                  class="wishlist__icon"
+                  src="./images/stars-5.svg"
+                  alt="stars"
+                  width="100"
+                  height="20"
+                />
+                <span>(85)</span>
+              </div>
+            </div>
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="./images/monitor.png"
+                  src="./images/monitor.png"
+                  alt="IPS LCD Gaming Monitor"
+                  width="170"
+                  height="129"
+                />
+                <div class="wishlist__icons">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">IPS LCD Gaming Monitor</h3>
+              <h3 class="wishlist__price">$1160</h3>
+              <div class="wishlist__stars">
+                <img
+                  class="wishlist__icon"
+                  src="./images/stars-5.svg"
+                  alt="stars"
+                  width="100"
+                  height="20"
+                />
+                <span>(85)</span>
+              </div>
+            </div>
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="wishlist__image"
+                  src="./images/gampaid2.png"
+                  alt="Gamepad2"
+                  width="172"
+                  height="150"
+                />
+                <div class="wishlist__icons">
+                  <div class="discount-second">
+                    <h4>NEW</h4>
+                  </div>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">HAVIT HV-G92 Gamepad</h3>
+              <h3 class="wishlist__price">$560</h3>
+              <div class="wishlist__stars">
+                <img
+                  class="wishlist__icon"
+                  src="./images/stars-5.svg"
+                  alt="stars"
+                  width="100"
+                  height="20"
+                />
+                <span>(85)</span>
+              </div>
+            </div>
+            <div class="wishlist__item">
+              <div class="wishlist__wrap">
+                <img
+                  class="wishlist__image"
+                  src="./images/keyboard.png"
+                  alt="Jacket"
+                  width="191"
+                  height="101"
+                />
+                <div class="wishlist__icons">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <a class="site-btn" href="#">Add To Cart</a>
+              <h3 class="wishlist__title">Quilted Satin Jacket</h3>
+              <h3 class="wishlist__price">$750</h3>
+              <div class="wishlist__stars">
+                <img
+                  class="wishlist__icon"
+                  src="./images/stars-5.svg"
+                  alt="stars"
+                  width="100"
+                  height="20"
+                />
+                <span>(85)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- FOOTER -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <ul class="footer__list footer__list-2">
+            <h3 class="footer__title">Subscribe</h3>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Get 10% off your first order</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <h3 class="footer__title">Support</h3>
+            <li class="footer__item">
+              <a class="footer__link" href="#"
+                >111 Bijoy sarani, Dhaka, <br />
+                DH 1515, Bangladesh.</a
+              >
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">exclusive@gmail.com</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">+88015-88888-9999</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <h3 class="footer__title">Account</h3>
+            <li class="footer__item">
+              <a class="footer__link" href="#">My Account</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Login / Register</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Cart</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Wishlist</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Shop</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <h3 class="footer__title">Quick Link</h3>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms Of Use</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">FAQ</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="footer__app">
+            <h3 class="footer__title">Download App</h3>
+            <h4 class="footer__mini__title">Save $3 with App New User Only</h4>
+            <div class="footer__apps">
+              <img
+                class=""
+                src="./images/scaner.png"
+                alt=""
+                width="76"
+                height="76"
+              />
+              <div class="footer__apps-img">
+                <img
+                  class=""
+                  src="./images/google-play.jpeg"
+                  alt="google-play"
+                  width="104"
+                  height="30"
+                />
+                <img
+                  class=""
+                  src="./images/app-store.jpeg"
+                  alt="app-store"
+                  width="104"
+                  height="30"
+                />
+              </div>
+            </div>
+            <div class="footer__socials">
+              <img
+                class="footer__socials-img"
+                src="./images/facebook.svg"
+                alt="facebook"
+                width="24"
+                height="24"
+              />
+              <img
+                class="footer__socials-img"
+                src="./images/twitter.svg"
+                alt="twitter"
+                width="24"
+                height="24"
+              />
+              <img
+                class="footer__socials-img"
+                src="./images/instagram.svg"
+                alt="instagram"
+                width="24"
+                height="24"
+              />
+              <img
+                class="footer__socials-img"
+                src="./images/linkedin.svg"
+                alt="linkedin"
+                width="24"
+                height="24"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <h3 class="footer__bottom-title">
+            Copyright Rimel 2022. All right reserved
+          </h3>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
